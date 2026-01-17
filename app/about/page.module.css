@@ -141,6 +141,45 @@
   line-height: 1.6;
 }
 
+.certList {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.certItem {
+  background: white;
+  border: 1px solid #f3f4f6;
+  border-radius: 0.9rem;
+  padding: 1.1rem 1.25rem;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.05);
+  position: relative;
+  overflow: hidden;
+}
+
+.certItem::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background: linear-gradient(90deg, #f97316, #ea580c);
+}
+
+.certName {
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 0.4rem;
+  line-height: 1.5;
+}
+
+.certMeta {
+  font-size: 0.9rem;
+  color: #6b7280;
+}
+
 @media (max-width: 768px) {
   .profile {
     flex-direction: column;
