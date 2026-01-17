@@ -108,7 +108,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className={styles.section}>
+      <section className={`${styles.section} ${styles.skillSection}`}>
         <div className={styles.container}>
           <h2 className={styles.sectionTitle}>Skill</h2>
           <div className={styles.skillGrid}>
