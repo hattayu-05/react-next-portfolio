@@ -30,7 +30,7 @@ export default function About() {
           <h2 className={styles.sectionTitle}>経歴</h2>
           <div className={styles.timeline}>
             <div className={styles.timelineItem}>
-              <div className={styles.year}>2024年4月</div>
+              <div className={styles.year}>2025年4月</div>
               <div className={styles.content}>
                 <h3>京都デザイン＆テクノロジー専門学校 入学</h3>
                 <p>スーパーITエンジニア専攻</p>
