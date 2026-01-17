@@ -29,7 +29,7 @@
   position: relative;
   overflow: hidden;
   background-color: #f6b05e; /* light warm orange to match attachment */
-  color: #3a2e1c;
+  color: #ffffff;
   padding: 5.5rem 2rem;
   text-align: left;
 }
@@ -44,6 +44,19 @@
   height: 45%;
   background: url("/hero-wave.svg") no-repeat bottom center;
   background-size: cover;
+  pointer-events: none;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  right: 2rem;
+  top: 2rem;
+  width: clamp(160px, 22vw, 300px);
+  height: clamp(160px, 22vw, 300px);
+  background: url("/hero-icon.svg") no-repeat center/contain;
+  opacity: 0.08;
+  filter: blur(0.5px);
   pointer-events: none;
 }
 
@@ -214,7 +227,7 @@
 }
 
 .section {
-  padding: 3.75rem 0;
+  padding: 7rem 0;
 }
 
 .skillSection {
