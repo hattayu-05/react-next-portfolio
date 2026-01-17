@@ -46,7 +46,7 @@ export default function About() {
               <div className={styles.certName}>
                 Microsoft Certified: Azure AI Fundamentals (AI-900)
               </div>
-              <div className={styles.certMeta}>取得予定・学習中</div>
+              <div className={styles.certMeta}>取得済み</div>
             </div>
             <div className={styles.certItem}>
               <div className={styles.certName}>実用英語技能検定 準2級</div>
