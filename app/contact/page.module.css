@@ -13,7 +13,21 @@
   font-weight: 700;
   margin-bottom: 1rem;
   text-align: center;
-  color: #111827;
+  color: #1f2937;
+  position: relative;
+  padding-bottom: 1rem;
+}
+
+.title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 4px;
+  background: linear-gradient(90deg, #f97316, #ea580c);
+  border-radius: 2px;
 }
 
 .description {
@@ -33,7 +47,19 @@
   background: white;
   padding: 2.5rem;
   border-radius: 0.75rem;
-  border: 1px solid #e5e7eb;
+  border: 2px solid #e5e7eb;
+  position: relative;
+}
+
+.formSection::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg, #f97316, #ea580c);
+  border-radius: 0.75rem 0.75rem 0 0;
 }
 
 .form {
@@ -64,14 +90,16 @@
   border: 1px solid #d1d5db;
   border-radius: 0.5rem;
   font-size: 1rem;
-  transition: border-color 0.2s, box-shadow 0.2s;
+  transition:
+    border-color 0.2s,
+    box-shadow 0.2s;
 }
 
 .input:focus,
 .textarea:focus {
   outline: none;
-  border-color: #3b82f6;
-  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+  border-color: #f97316;
+  box-shadow: 0 0 0 3px rgba(249, 115, 22, 0.1);
 }
 
 .textarea {
@@ -88,7 +116,9 @@
   font-size: 1rem;
   font-weight: 600;
   cursor: pointer;
-  transition: transform 0.2s, box-shadow 0.2s;
+  transition:
+    transform 0.2s,
+    box-shadow 0.2s;
 }
 
 .submitButton:hover {
@@ -110,14 +140,26 @@
   background: white;
   padding: 2rem;
   border-radius: 0.75rem;
-  border: 1px solid #e5e7eb;
+  border: 2px solid #e5e7eb;
+  position: relative;
+}
+
+.infoCard::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg, #f97316, #ea580c);
+  border-radius: 0.75rem 0.75rem 0 0;
 }
 
 .infoTitle {
   font-size: 1.25rem;
   font-weight: 700;
   margin-bottom: 1rem;
-  color: #111827;
+  color: #f97316;
 }
 
 .infoText {
@@ -133,14 +175,14 @@
 }
 
 .socialLink {
-  color: #3b82f6;
+  color: #f97316;
   text-decoration: none;
   font-weight: 500;
-  transition: color 0.2s;
+  transition: all 0.3s ease;
 }
 
 .socialLink:hover {
-  color: #2563eb;
+  color: #ea580c;
   text-decoration: underline;
 }
 
@@ -148,11 +190,11 @@
   .content {
     grid-template-columns: 1fr;
   }
-  
+
   .title {
     font-size: 2rem;
   }
-  
+
   .formSection {
     padding: 2rem;
   }

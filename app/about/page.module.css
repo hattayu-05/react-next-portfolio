@@ -13,7 +13,21 @@
   font-weight: 700;
   margin-bottom: 3rem;
   text-align: center;
-  color: #111827;
+  color: #1f2937;
+  position: relative;
+  padding-bottom: 1rem;
+}
+
+.title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 4px;
+  background: linear-gradient(90deg, #f97316, #ea580c);
+  border-radius: 2px;
 }
 
 .profile {
@@ -33,12 +47,14 @@
 .placeholder {
   width: 200px;
   height: 200px;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #fed7aa 0%, #fdba74 100%);
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 6rem;
+  border: 4px solid #f97316;
+  box-shadow: 0 0 0 8px rgba(249, 115, 22, 0.1);
 }
 
 .profileContent {
@@ -61,13 +77,14 @@
 
 .section {
   margin-top: 4rem;
-}
-
-.sectionTitle {
-  font-size: 1.75rem;
-  font-weight: 700;
-  margin-bottom: 2rem;
-  color: #111827;
+  .sectionTitle {
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    color: #1f2937;
+    padding-bottom: 0.5rem;
+    border-bottom: 3px solid #f97316;
+  }
   padding-bottom: 0.5rem;
   border-bottom: 3px solid #3b82f6;
 }
@@ -78,7 +95,7 @@
 }
 
 .timeline::before {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   top: 0;
@@ -93,21 +110,21 @@
 }
 
 .timelineItem::before {
-  content: '';
+  content: "";
   position: absolute;
   left: -2.5rem;
   top: 0.5rem;
   width: 12px;
   height: 12px;
+  background: #f97316;
   border-radius: 50%;
-  background: #3b82f6;
   border: 3px solid white;
-  box-shadow: 0 0 0 3px #3b82f6;
+  box-shadow: 0 0 0 2px #f97316;
 }
 
 .year {
   font-weight: 700;
-  color: #3b82f6;
+  color: #f97316;
   margin-bottom: 0.5rem;
   font-size: 1.125rem;
 }
@@ -131,17 +148,17 @@
     text-align: center;
     padding: 2rem;
   }
-  
+
   .placeholder {
     width: 150px;
     height: 150px;
     font-size: 4rem;
   }
-  
+
   .title {
     font-size: 2rem;
   }
-  
+
   .name {
     font-size: 1.5rem;
   }
