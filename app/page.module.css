@@ -37,14 +37,13 @@
 .hero::after {
   content: "";
   position: absolute;
-  left: 50%;
-  bottom: -8px;
-  transform: translateX(-50%);
-  width: 110%;
-  height: 45%;
-  background: url("/hero-wave.svg") no-repeat bottom center;
-  background-size: cover;
+  inset: 0;
+  background: linear-gradient(rgba(246, 176, 94, 0.35), rgba(246, 176, 94, 0.35)), url("https://images.unsplash.com/photo-1707324148764-99647364afa3?auto=format&fit=crop&w=1920&q=80&ixlib=rb-4.1.0") center/cover no-repeat;
+  filter: blur(16px);
+  transform: scale(1.06);
+  opacity: 0.85;
   pointer-events: none;
+  z-index: 0;
 }
 
 .hero::before {
