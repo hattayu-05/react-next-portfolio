@@ -199,15 +199,11 @@
 }
 
 .skillSection {
-  background-image:
-    linear-gradient(
-      135deg,
-      rgba(255, 255, 255, 0.92),
-      rgba(255, 247, 237, 0.88)
-    ),
-    url("https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&h=800&fit=crop");
-  background-size: cover;
-  background-position: center;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.92),
+    rgba(255, 247, 237, 0.88)
+  );
   position: relative;
 }
 
