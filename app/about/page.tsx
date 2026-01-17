@@ -1,4 +1,4 @@
-import styles from './page.module.css';
+import styles from "./page.module.css";
 
 export default function About() {
   return (
@@ -10,13 +10,19 @@ export default function About() {
             <div className={styles.placeholder}>👤</div>
           </div>
           <div className={styles.profileContent}>
-            <h2 className={styles.name}>梅井 太貴</h2>
+            <h2 className={styles.name}>山下悠</h2>
             <div className={styles.bio}>
-              <p>2005年生まれ、京都府出身</p>
-              <p>昨年4月に京都デザイン＆テクノロジー専門学校に入学し、現在ITを学んでいます。</p>
-              <p>スーパーITエンジニア専攻の1年です。</p>
-              <p>趣味は、アニメ、マンガとK-POPです。</p>
-              <p>好きな食べ物はラーメンとハンバーグです。</p>
+              <p>2006年5月26日生まれ、滋賀県出身です。</p>
+              <p>
+                京都デザイン＆テクノロジー専門学校のホワイトハッカー専攻でセキュリティを学習中です。
+              </p>
+              <p>
+                サイバーセキュリティと情報保護に興味があり、日々新しい技術を習得しています。
+              </p>
+              <p>
+                このポートフォリオを通じて、自分のスキルと成長を発信していきます。
+              </p>
+              <p>趣味はゲーム、好きな食べ物は寿司です。</p>
             </div>
           </div>
         </div>

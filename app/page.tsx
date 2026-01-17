@@ -1,5 +1,5 @@
-import Link from 'next/link';
-import styles from './page.module.css';
+import Link from "next/link";
+import styles from "./page.module.css";
 
 export default function Home() {
   return (
@@ -7,10 +7,10 @@ export default function Home() {
       <section className={styles.hero}>
         <div className={styles.container}>
           <h1 className={styles.title}>
-            <span className={styles.simple}>SIMPLE</span>
+            <span className={styles.simple}>MY</span>
             <span className={styles.portfolio}>Portfolio</span>
           </h1>
-          <p className={styles.subtitle}>ご覧いただきありがとうございます</p>
+          <p className={styles.subtitle}>山下悠のポートフォリオへようこそ</p>
         </div>
       </section>
 
@@ -58,13 +58,17 @@ export default function Home() {
               <div className={styles.placeholder}>👤</div>
             </div>
             <div className={styles.profileContent}>
-              <h3 className={styles.profileName}>あなたの名前</h3>
+              <h3 className={styles.profileName}>山下悠</h3>
               <p className={styles.profileText}>
-                2005年生まれ、京都府出身<br />
-                昨年4月に京都デザイン＆テクノロジー専門学校に入学し、現在ITを学んでいます。<br />
-                スーパーITエンジニア専攻の1年です。<br />
-                趣味は、アニメ、マンガとK-POPです。<br />
-                好きな食べ物はラーメンとハンバーグです。
+                2006年5月26日生まれ、滋賀県出身
+                <br />
+                京都デザイン＆テクノロジー専門学校のホワイトハッカー専攻で学習中です。
+                <br />
+                サイバーセキュリティと情報保護に興味があります。
+                <br />
+                趣味は、ゲーム、好きな食べ物は寿司です。
+                <br />
+                日々新しい技術を習得しています。
               </p>
               <div className={styles.linkWrapper}>
                 <Link href="/about" className={styles.moreLink}>
@@ -81,19 +85,25 @@ export default function Home() {
           <h2 className={styles.sectionTitle}>Skill</h2>
           <div className={styles.skillGrid}>
             <div className={styles.skillCard}>
-              <div className={styles.skillIcon}>HTML</div>
-              <h3 className={styles.skillTitle}>HTML</h3>
-              <p className={styles.skillText}>現在学習中です。</p>
+              <div className={styles.skillIcon}>PY</div>
+              <h3 className={styles.skillTitle}>Python</h3>
+              <p className={styles.skillText}>
+                Pythonを使ったセキュリティツール開発で学習中です。
+              </p>
             </div>
             <div className={styles.skillCard}>
-              <div className={styles.skillIcon}>CSS</div>
-              <h3 className={styles.skillTitle}>CSS</h3>
-              <p className={styles.skillText}>プログラミング学習を開始してから一番使っている気がします。</p>
+              <div className={styles.skillIcon}>NET</div>
+              <h3 className={styles.skillTitle}>ネットワーク・Linux</h3>
+              <p className={styles.skillText}>
+                サイバーセキュリティの基盤となるネットワークとLinuxを習得中です。
+              </p>
             </div>
             <div className={styles.skillCard}>
-              <div className={styles.skillIcon}>TS</div>
-              <h3 className={styles.skillTitle}>TypeScript</h3>
-              <p className={styles.skillText}>ポートフォリオサイトを作成しながら学習中です。</p>
+              <div className={styles.skillIcon}>SEC</div>
+              <h3 className={styles.skillTitle}>セキュリティ基礎</h3>
+              <p className={styles.skillText}>
+                ホワイトハッキング専攻で集中的に学習しています。
+              </p>
             </div>
           </div>
           <div className={styles.linkWrapper}>
