@@ -5,12 +5,40 @@ export default function Home() {
   return (
     <main className={styles.main}>
       <section className={styles.hero}>
+        <div className={styles.heroBackdrop}>
+          <span className={`${styles.orb} ${styles.orbOne}`} />
+          <span className={`${styles.orb} ${styles.orbTwo}`} />
+        </div>
         <div className={styles.container}>
-          <h1 className={styles.title}>
-            <span className={styles.simple}>MY</span>
-            <span className={styles.portfolio}>Portfolio</span>
-          </h1>
-          <p className={styles.subtitle}>山下悠のポートフォリオへようこそ</p>
+          <div className={styles.heroContent}>
+            <div className={styles.heroText}>
+              <div className={styles.heroBadge}>Security × Creativity</div>
+              <h1 className={styles.heroTitle}>守る技術を、楽しく学ぶ。</h1>
+              <p className={styles.heroLead}>
+                山下悠（ホワイトハッカー専攻）が、サイバーセキュリティやものづくりの
+                学び・挑戦をまとめたポートフォリオです。暖色の熱量と、クリーンな設計で
+                「こだわって作った」ことが伝わるサイトを目指しています。
+              </p>
+              <div className={styles.heroActions}>
+                <Link href="/skill" className={styles.primaryAction}>
+                  スキルを見る
+                </Link>
+                <Link href="/contact" className={styles.secondaryAction}>
+                  相談・問い合わせ
+                </Link>
+              </div>
+            </div>
+
+            <div className={styles.heroVisual}>
+              <div
+                className={styles.heroPhoto}
+                aria-label="Warm workspace scene"
+              />
+              <div className={styles.heroCaption}>
+                Warm desk vibes from Unsplash
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
