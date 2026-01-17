@@ -1,6 +1,13 @@
 .main {
   min-height: 100vh;
-  background: linear-gradient(135deg, #fff7ed 0%, #ffe8d6 25%, #ffd9b3 50%, #ffcb8a 75%, #fff7ed 100%);
+  background: linear-gradient(
+    135deg,
+    #fff7ed 0%,
+    #ffe8d6 25%,
+    #ffd9b3 50%,
+    #ffcb8a 75%,
+    #fff7ed 100%
+  );
   background-size: 400% 400%;
   animation: gradientShift 15s ease infinite;
   position: relative;
@@ -21,21 +28,23 @@
 .hero {
   position: relative;
   overflow: hidden;
-  background:
-    radial-gradient(
-      circle at 20% 20%,
-      rgba(254, 215, 170, 0.6),
-      transparent 30%
-    ),
-    radial-gradient(
-      circle at 80% 0%,
-      rgba(249, 115, 22, 0.35),
-      transparent 35%
-    ),
-    linear-gradient(135deg, #f97316 0%, #ea580c 100%);
-  color: white;
+  background-color: #f6b05e; /* light warm orange to match attachment */
+  color: #3a2e1c;
   padding: 5.5rem 2rem;
   text-align: left;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -8px;
+  transform: translateX(-50%);
+  width: 110%;
+  height: 45%;
+  background: url("/hero-wave.svg") no-repeat bottom center;
+  background-size: cover;
+  pointer-events: none;
 }
 
 .container {
@@ -47,8 +56,7 @@
 }
 
 .heroBackdrop {
-  position: absolute;
-  inset: 0;
+  display: none;
 }
 
 .orb {
