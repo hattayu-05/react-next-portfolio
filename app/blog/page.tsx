@@ -1,7 +1,14 @@
 import Link from "next/link";
 import styles from "./page.module.css";
 
-const blogPosts: any[] = [];
+interface BlogPost {
+  id: number;
+  title: string;
+  date: string;
+  tags: string[];
+}
+
+const blogPosts: BlogPost[] = [];
 
 export default function Blog() {
   return (
