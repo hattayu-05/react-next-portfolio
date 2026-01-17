@@ -36,7 +36,7 @@ export default function About() {
               <div className={styles.year}>2025年4月</div>
               <div className={styles.content}>
                 <h3>京都デザイン＆テクノロジー専門学校 入学</h3>
-                <p>スーパーITエンジニア専攻</p>
+                <p>ホワイトハッカー専攻</p>
               </div>
             </div>
           </div>
