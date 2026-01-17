@@ -113,21 +113,21 @@ export default function Home() {
           <h2 className={styles.sectionTitle}>Skill</h2>
           <div className={styles.skillGrid}>
             <div className={styles.skillCard}>
-              <div className={styles.skillIcon}>PY</div>
+              <div className={styles.skillIcon}>🐍</div>
               <h3 className={styles.skillTitle}>Python</h3>
               <p className={styles.skillText}>
                 Pythonを使ったセキュリティツール開発で学習中です。
               </p>
             </div>
             <div className={styles.skillCard}>
-              <div className={styles.skillIcon}>NET</div>
+              <div className={styles.skillIcon}>🔗</div>
               <h3 className={styles.skillTitle}>ネットワーク・Linux</h3>
               <p className={styles.skillText}>
                 サイバーセキュリティの基盤となるネットワークとLinuxを習得中です。
               </p>
             </div>
             <div className={styles.skillCard}>
-              <div className={styles.skillIcon}>SEC</div>
+              <div className={styles.skillIcon}>🔒</div>
               <h3 className={styles.skillTitle}>セキュリティ基礎</h3>
               <p className={styles.skillText}>
                 ホワイトハッキング専攻で集中的に学習しています。

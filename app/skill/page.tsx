@@ -4,14 +4,14 @@ const skills = [
   {
     id: 1,
     name: "Python",
-    icon: "PY",
+    icon: "🐍",
     description: "Pythonを使ったセキュリティツール開発で学習中です。",
     level: 75,
   },
   {
     id: 2,
     name: "ネットワーク・Linux基礎",
-    icon: "NET",
+    icon: "🔗",
     description:
       "サイバーセキュリティの基盤となるネットワークとLinuxを習得中です。",
     level: 70,
@@ -19,7 +19,7 @@ const skills = [
   {
     id: 3,
     name: "セキュリティ基礎",
-    icon: "SEC",
+    icon: "🔒",
     description: "ホワイトハッキング専攻で集中的に学習しています。",
     level: 80,
   },
