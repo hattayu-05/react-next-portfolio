@@ -49,6 +49,9 @@
   transition: all 0.3s ease;
   position: relative;
 }
+.navIcon {
+  color: #8b8680;
+}
 
 .navLink::after {
   content: "";
