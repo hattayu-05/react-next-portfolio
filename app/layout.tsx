@@ -25,8 +25,35 @@ const jetbrains = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Portfolio - Simple Portfolio",
-  description: "個人ポートフォリオサイト",
+  title: "Yu Yamashita Portfolio | Security × Creativity",
+  description:
+    "ホワイトハッカー専攻・山下悠のポートフォリオ。セキュリティ学習と制作物を暖色グラデーションでまとめています。",
+  openGraph: {
+    title: "Yu Yamashita Portfolio | Security × Creativity",
+    description:
+      "ホワイトハッカー専攻・山下悠のポートフォリオ。セキュリティ学習と制作物を暖色グラデーションでまとめています。",
+    url: "https://portfolio.example.com",
+    siteName: "Yu Yamashita Portfolio",
+    locale: "ja_JP",
+    type: "website",
+    images: [
+      {
+        url: "https://images.unsplash.com/photo-1707324148764-99647364afa3?auto=format&fit=crop&w=1200&q=80&ixlib=rb-4.1.0",
+        width: 1200,
+        height: 630,
+        alt: "Warm desk vibes portfolio visual",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Yu Yamashita Portfolio | Security × Creativity",
+    description:
+      "ホワイトハッカー専攻・山下悠のポートフォリオ。セキュリティ学習と制作物を暖色グラデーションでまとめています。",
+    images: [
+      "https://images.unsplash.com/photo-1707324148764-99647364afa3?auto=format&fit=crop&w=1200&q=80&ixlib=rb-4.1.0",
+    ],
+  },
 };
 
 export default function RootLayout({

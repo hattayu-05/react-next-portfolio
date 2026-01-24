@@ -1,7 +1,7 @@
-'use client';
+"use client";
 
-import Link from 'next/link';
-import styles from './Footer.module.css';
+import Link from "next/link";
+import styles from "./Footer.module.css";
 
 export default function Footer() {
   return (
@@ -36,9 +36,12 @@ export default function Footer() {
           </div>
         </div>
         <div className={styles.copyright}>
-          <p>©︎ 2025 Your Name</p>
+          <p>©︎ 2025 Yu Yamashita</p>
         </div>
-        <button className={styles.scrollTop} onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
+        <button
+          className={styles.scrollTop}
+          onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+        >
           ↑
         </button>
       </div>

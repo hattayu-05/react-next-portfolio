@@ -1,37 +1,52 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Read me
 
-## Getting Started
+# react-next-portfolio
 
-First, run the development server:
+サイトURL: 未デプロイ（ローカルで `npm run dev` を実行）
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+京都デザイン＆テクノロジー専門学校 ホワイトハッカー専攻の山下悠によるポートフォリオサイト。セキュリティ学習の歩みと制作物を、暖色グラデーションのデザインでまとめました。
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+# 課題の紹介
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## TOP
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- 「Security × Creativity」を軸にしたヒーローセクションと2CTA（スキル/お問い合わせ導線）。
+- ブログの最新トピックをカードで3件ハイライトし、一覧ページへのリンクを配置。
+- プロフィールの概要とスキルカード（Python、ネットワーク・Linux、セキュリティ基礎）をグリッドで提示。
 
-## Learn More
+## 自己紹介のページ
 
-To learn more about Next.js, take a look at the following resources:
+- プロフィールカードに自己紹介文と抽象背景のビジュアルを添え、人物像を強調。
+- 年表形式で専門学校入学を記載し、セキュリティへの取り組みを示す。
+- 資格リストをカード表示。
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## ブログ一覧ページ
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- グリッドカードレイアウトで記事を並べる設計。現在はデータ未投入のため「記事なし」メッセージを表示。
+- タグ、日付、抜粋のUIを用意し、今後の投稿追加に対応。
+- セクション見出しと説明文で学習記録の趣旨を案内。
 
-## Deploy on Vercel
+## ブログ詳細ページ
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- 現時点では未実装。今後、記事詳細のルーティングと本文テンプレートを追加予定。
+- 一覧カードから遷移する導線を設計予定。
+- タグ・日付・本文・関連リンクを想定した構成で拡張しやすいように準備。
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
-デプロイトリガー
+# 一番見てほしいところ
+
+- ヒーローの暖色グラデーションとオブジェクト配置で「熱量」と「安心感」を両立させたビジュアル。
+- スキルカードの進捗バーとアイコンで現在の学習状況を直感的に把握できる点。
+- 各セクションのリンク導線（ブログ一覧、プロフィール、スキル、お問い合わせ）を明示し、回遊性を高めたナビゲーション。
+
+# 力を入れた点
+
+## 実装面
+
+- Next.js App Router構成でページを分割し、共通レイアウトにヘッダー/フッターを設置。
+- TypeScriptとCSS Modulesでスタイルをスコープ化し、コンポーネントごとに責務を明確化。
+- お問い合わせフォームで状態管理とバリデーション（必須入力）を実装し、送信後のリセット/アラートを用意。
+
+## デザイン面
+
+- 暖色系グラデーションとアクセントラインで一貫性を持たせつつ、カードシャドウで立体感を付与。
+- グリッドレイアウトでレスポンシブ対応し、モバイルでも読みやすい余白とタイポグラフィを調整。
