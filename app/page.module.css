@@ -279,7 +279,7 @@
 }
 
 .section {
-  padding: 14rem 0;
+  padding: 8rem 0;
 }
 
 .skillSection {
@@ -316,8 +316,8 @@
 .blogGrid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2.5rem;
-  margin-bottom: 3rem;
+  gap: 2rem;
+  margin-bottom: 2rem;
 }
 
 .blogCard {
@@ -465,8 +465,8 @@
 .skillGrid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 2.5rem;
-  margin-bottom: 3rem;
+  gap: 2rem;
+  margin-bottom: 2rem;
   position: relative;
   z-index: 1;
 }
