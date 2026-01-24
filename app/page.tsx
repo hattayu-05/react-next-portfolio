@@ -31,17 +31,6 @@ export default function Home() {
                 </Link>
               </div>
             </div>
-
-            <div className={styles.heroVisual}>
-              <div className={styles.heroCode} aria-hidden="true" />
-              <div
-                className={styles.heroPhoto}
-                aria-label="Warm workspace scene"
-              />
-              <div className={styles.heroCaption}>
-                Warm desk vibes from Unsplash
-              </div>
-            </div>
           </div>
         </div>
       </section>

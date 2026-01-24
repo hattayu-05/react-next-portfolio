@@ -171,8 +171,7 @@
 }
 
 .heroVisual {
-  position: relative;
-  justify-self: flex-end;
+  display: none;
 }
 
 .heroCode {
