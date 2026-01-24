@@ -6,12 +6,6 @@ export default function About() {
       <div className={styles.container}>
         <h1 className={styles.title}>自己紹介</h1>
         <div className={styles.profile}>
-          <div className={styles.profileImage}>
-            <div
-              className={styles.abstractImage}
-              aria-label="Warm abstract gradient background"
-            />
-          </div>
           <div className={styles.profileContent}>
             <h2 className={styles.name}>山下悠</h2>
             <div className={styles.bio}>

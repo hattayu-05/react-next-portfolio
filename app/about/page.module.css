@@ -31,7 +31,7 @@
 }
 
 .profile {
-  display: flex;
+  display: block;
   gap: 3rem;
   margin-bottom: 4rem;
   background: white;
@@ -41,7 +41,7 @@
 }
 
 .profileImage {
-  flex-shrink: 0;
+  display: none;
 }
 
 .abstractImage {
