@@ -590,12 +590,9 @@
   .blogCard {
     padding: 1rem;
   }
-}
 
   .blogGrid,
   .skillGrid {
     grid-template-columns: 1fr;
   }
 }
-/* Works Section */
-.worksGrid {
