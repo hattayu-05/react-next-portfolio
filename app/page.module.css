@@ -668,10 +668,18 @@
   transition: all 0.3s ease;
   border: 2px solid transparent;
   box-shadow: 0 4px 12px rgba(249, 115, 22, 0.3);
+  margin-right: 1rem;
+}
 }
 
 .workLink:hover {
   transform: translateY(-2px);
   box-shadow: 0 8px 20px rgba(249, 115, 22, 0.4);
   background: linear-gradient(135deg, #ea580c 0%, #d97706 100%);
+}
+
+.workLinks {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
 }
