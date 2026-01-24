@@ -9,9 +9,9 @@
 }
 
 .title {
-  font-size: 2.5rem;
+  font-size: 2.75rem;
   font-weight: 700;
-  margin-bottom: 3rem;
+  margin-bottom: 4rem;
   text-align: center;
   color: #1f2937;
   position: relative;
@@ -83,23 +83,27 @@
 
 .bio p {
   color: #374151;
-  line-height: 1.8;
+  line-height: 1.9;
   margin-bottom: 1rem;
   font-size: 1.05rem;
 }
 
+.bio {
+  max-width: 800px;
+}
+
 .section {
-  margin-top: 4rem;
-  .sectionTitle {
-    font-size: 1.75rem;
-    font-weight: 700;
-    margin-bottom: 2rem;
-    color: #1f2937;
-    padding-bottom: 0.5rem;
-    border-bottom: 3px solid #f97316;
-  }
+  margin-top: 6rem;
+  margin-bottom: 6rem;
+}
+
+.sectionTitle {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  color: #1f2937;
   padding-bottom: 0.5rem;
-  border-bottom: 3px solid #3b82f6;
+  border-bottom: 3px solid #f97316;
 }
 
 .timeline {
