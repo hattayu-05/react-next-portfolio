@@ -6,9 +6,22 @@ const Icon = ({ name }: { name: IconName }) => {
   switch (name) {
     case "python":
       return (
-        <svg viewBox="0 0 24 24" aria-hidden fill="currentColor">
-          {/* Python蛇アイコン */}
-          <path d="M12 2C11.5 2 11 2.2 10.8 2.5L4.3 8C3.7 8.4 3 9.2 3 10v4c0 0.8 0.7 1.6 1.3 2l6.5 5.5c0.2 0.3 0.7 0.5 1.2 0.5s1 -0.2 1.2 -0.5l6.5 -5.5c0.6 -0.4 1.3 -1.2 1.3 -2v-4c0 -0.8 -0.7 -1.6 -1.3 -2l-6.5 -5.5C13 2.2 12.5 2 12 2z M10 9c0.55 0 1 0.45 1 1s-0.45 1 -1 1s-1 -0.45 -1 -1S9.45 9 10 9z M14 15c-0.55 0 -1 -0.45 -1 -1s0.45 -1 1 -1s1 0.45 1 1S14.55 15 14 15z" />
+        <svg
+          viewBox="0 0 24 24"
+          aria-hidden
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="2"
+        >
+          {/* Python: ダイヤモンド形 */}
+          <circle cx="12" cy="12" r="9" strokeWidth="1.5" />
+          <path
+            d="M12 8L14.5 11.5L14.5 15L9.5 15L9.5 11.5Z"
+            fill="currentColor"
+            opacity="0.8"
+          />
+          <circle cx="11.5" cy="10.5" r="0.8" fill="white" />
+          <circle cx="12.5" cy="13.5" r="0.8" fill="white" />
         </svg>
       );
     case "network":
@@ -18,18 +31,39 @@ const Icon = ({ name }: { name: IconName }) => {
           aria-hidden
           fill="none"
           stroke="currentColor"
-          strokeWidth="1.5"
+          strokeWidth="2"
         >
-          {/* リンク/チェーンアイコン */}
-          <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
-          <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
+          {/* ネットワーク: チェーン/リンク */}
+          <circle cx="12" cy="12" r="9" strokeWidth="1.5" />
+          <path d="M9 10.5C9 9.67157 9.67157 9 10.5 9H13.5C14.3284 9 15 9.67157 15 10.5V13.5C15 14.3284 14.3284 15 13.5 15H10.5C9.67157 15 9 14.3284 9 13.5V10.5Z" />
+          <path d="M14.5 12H9.5" stroke="currentColor" strokeWidth="1.5" />
         </svg>
       );
     case "security":
       return (
         <svg viewBox="0 0 24 24" aria-hidden fill="currentColor">
-          {/* ロック/シールドアイコン */}
-          <path d="M18.75 9V7.5c0-.825-.675-1.5-1.5-1.5H6.75c-.825 0-1.5.675-1.5 1.5V9m13.5 0v8.25c0 .825-.675 1.5-1.5 1.5H6.75c-.825 0-1.5-.675-1.5-1.5V9m13.5 0H6.75M12 12.75v3M10.5 16.5h3" />
+          {/* セキュリティ: シールド */}
+          <circle
+            cx="12"
+            cy="12"
+            r="9"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="1.5"
+          />
+          <path
+            d="M12 6L18 9L18 13C18 16.3 15.3 18.5 12 19.5C8.7 18.5 6 16.3 6 13L6 9L12 6Z"
+            fill="currentColor"
+            opacity="0.8"
+          />
+          <path
+            d="M11 12L10 13L12 15L14 11"
+            stroke="white"
+            strokeWidth="1"
+            fill="none"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          />
         </svg>
       );
   }
