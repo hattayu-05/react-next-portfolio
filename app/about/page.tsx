@@ -46,8 +46,7 @@ export default function About() {
 
         <section className={styles.section}>
           <h2 className={styles.sectionTitle}>資格</h2>
-          <div className={styles.certList}>
-          </div>
+          <div className={styles.certList}></div>
         </section>
       </div>
     </main>

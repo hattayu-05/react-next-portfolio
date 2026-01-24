@@ -66,6 +66,24 @@
   width: 100%;
 }
 
+.themeToggle {
+  background: none;
+  border: none;
+  font-size: 1.3rem;
+  cursor: pointer;
+  padding: 0.25rem 0.5rem;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.themeToggle:hover {
+  background: rgba(249, 115, 22, 0.1);
+  transform: scale(1.1);
+}
+
 @media (max-width: 768px) {
   .container {
     flex-direction: column;
