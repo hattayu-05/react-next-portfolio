@@ -3,7 +3,6 @@ import { Poppins, Zen_Kaku_Gothic_New, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import { ThemeProvider } from "next-themes";
 
 // 英語見出し用（太字でポップに）
 const poppins = Poppins({
@@ -72,11 +71,9 @@ export default function RootLayout({
       className={`${poppins.variable} ${zenKaku.variable} ${jetbrains.variable}`}
     >
       <body>
-        <ThemeProvider attribute="class" defaultTheme="light" enableSystem>
-          <Header />
-          {children}
-          <Footer />
-        </ThemeProvider>
+        <Header />
+        {children}
+        <Footer />
       </body>
     </html>
   );
