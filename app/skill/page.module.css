@@ -99,6 +99,10 @@
   transform: scale(1.15);
 }
 
+.brandIcon {
+  color: #f97316;
+}
+
 .skillIcon svg {
   width: 56px;
   height: 56px;

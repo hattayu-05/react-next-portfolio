@@ -39,7 +39,10 @@
   gap: 2rem;
 }
 
-.nav a {
+.navLink {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
   text-decoration: none;
   color: #4b5563;
   font-weight: 500;
@@ -47,7 +50,7 @@
   position: relative;
 }
 
-.nav a::after {
+.navLink::after {
   content: "";
   position: absolute;
   bottom: -4px;
@@ -58,11 +61,11 @@
   transition: width 0.3s ease;
 }
 
-.nav a:hover {
+.navLink:hover {
   color: #f97316;
 }
 
-.nav a:hover::after {
+.navLink:hover::after {
   width: 100%;
 }
 

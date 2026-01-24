@@ -1,3 +1,5 @@
+import { SiPython, SiLinux } from "react-icons/si";
+import { LuNetwork } from "react-icons/lu";
 import styles from "./page.module.css";
 
 type IconName = "python" | "network" | "security";
@@ -5,67 +7,11 @@ type IconName = "python" | "network" | "security";
 const Icon = ({ name }: { name: IconName }) => {
   switch (name) {
     case "python":
-      return (
-        <svg
-          viewBox="0 0 24 24"
-          aria-hidden
-          fill="none"
-          stroke="currentColor"
-          strokeWidth="2"
-        >
-          {/* Python: ダイヤモンド形 */}
-          <circle cx="12" cy="12" r="9" strokeWidth="1.5" />
-          <path
-            d="M12 8L14.5 11.5L14.5 15L9.5 15L9.5 11.5Z"
-            fill="currentColor"
-            opacity="0.8"
-          />
-          <circle cx="11.5" cy="10.5" r="0.8" fill="white" />
-          <circle cx="12.5" cy="13.5" r="0.8" fill="white" />
-        </svg>
-      );
+      return <SiPython size={56} className={styles.brandIcon} />;
     case "network":
-      return (
-        <svg
-          viewBox="0 0 24 24"
-          aria-hidden
-          fill="none"
-          stroke="currentColor"
-          strokeWidth="2"
-        >
-          {/* ネットワーク: チェーン/リンク */}
-          <circle cx="12" cy="12" r="9" strokeWidth="1.5" />
-          <path d="M9 10.5C9 9.67157 9.67157 9 10.5 9H13.5C14.3284 9 15 9.67157 15 10.5V13.5C15 14.3284 14.3284 15 13.5 15H10.5C9.67157 15 9 14.3284 9 13.5V10.5Z" />
-          <path d="M14.5 12H9.5" stroke="currentColor" strokeWidth="1.5" />
-        </svg>
-      );
+      return <LuNetwork size={56} className={styles.brandIcon} />;
     case "security":
-      return (
-        <svg viewBox="0 0 24 24" aria-hidden fill="currentColor">
-          {/* セキュリティ: シールド */}
-          <circle
-            cx="12"
-            cy="12"
-            r="9"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="1.5"
-          />
-          <path
-            d="M12 6L18 9L18 13C18 16.3 15.3 18.5 12 19.5C8.7 18.5 6 16.3 6 13L6 9L12 6Z"
-            fill="currentColor"
-            opacity="0.8"
-          />
-          <path
-            d="M11 12L10 13L12 15L14 11"
-            stroke="white"
-            strokeWidth="1"
-            fill="none"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          />
-        </svg>
-      );
+      return <LuNetwork size={56} className={styles.brandIcon} />;
   }
 };
 
