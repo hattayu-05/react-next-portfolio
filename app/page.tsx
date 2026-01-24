@@ -1,32 +1,6 @@
 import Link from "next/link";
 import styles from "./page.module.css";
 
-type Work = {
-  id: number;
-  title: string;
-  description: string;
-  technologies: string[];
-  githubUrl?: string;
-  liveUrl?: string;
-};
-
-const works: Work[] = [
-  {
-    id: 1,
-    title: "ポートフォリオサイト",
-    description:
-      "このサイト自体が作品です。Next.jsとMicroCMSを使い、モダンで親しみやすいポートフォリオサイトを構築しました。デザインからデプロイまで、フルスタックで開発しています。",
-    technologies: [
-      "Next.js",
-      "TypeScript",
-      "CSS Modules",
-      "MicroCMS",
-      "Vercel",
-    ],
-    githubUrl: "https://github.com/hattayu-05/react-next-portfolio",
-  },
-];
-
 export default function Home() {
   return (
     <main className={styles.main}>
@@ -93,42 +67,6 @@ export default function Home() {
             <Link href="/blog" className={styles.moreLink}>
               ブログ一覧 &gt;
             </Link>
-          </div>
-        </div>
-      </section>
-
-      <section className={styles.section}>
-        <div className={styles.container}>
-          <h2 className={styles.sectionTitle}>Works</h2>
-          <p className={styles.description}>これまでに制作した作品です</p>
-          <div className={styles.worksGrid}>
-            {works.map((work) => (
-              <div key={work.id} className={styles.workCard}>
-                <div className={styles.workContent}>
-                  <h3 className={styles.workTitle}>{work.title}</h3>
-                  <p className={styles.workDescription}>{work.description}</p>
-                  <div className={styles.workTechs}>
-                    {work.technologies.map((tech) => (
-                      <span key={tech} className={styles.tech}>
-                        {tech}
-                      </span>
-                    ))}
-                  </div>
-                  <div className={styles.workLinks}>
-                    {work.githubUrl && (
-                      <a href={work.githubUrl} className={styles.workLink}>
-                        GitHub Repository →
-                      </a>
-                    )}
-                    {work.liveUrl && (
-                      <a href={work.liveUrl} className={styles.workLink}>
-                        Live Demo →
-                      </a>
-                    )}
-                  </div>
-                </div>
-              </div>
-            ))}
           </div>
         </div>
       </section>
