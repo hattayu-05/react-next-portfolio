@@ -136,7 +136,7 @@
 
 .skillProgress {
   height: 100%;
-  background: linear-gradient(135deg, #f97316 0%, #ea580c 100%);
+  background: linear-gradient(135deg, #d7d2cc 0%, #b8b0a8 100%);
   border-radius: 999px;
   transition: width 0.6s ease;
 }
