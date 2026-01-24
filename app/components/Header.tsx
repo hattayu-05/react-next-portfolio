@@ -10,7 +10,6 @@ export default function Header() {
           <span className={styles.portfolio}>Portfolio</span>
         </Link>
         <nav className={styles.nav}>
-          <Link href="/entry">エントリー</Link>
           <Link href="/about">自己紹介</Link>
           <Link href="/blog">ブログ</Link>
           <Link href="/skill">スキル</Link>
