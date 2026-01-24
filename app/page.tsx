@@ -73,6 +73,36 @@ export default function Home() {
 
       <section className={styles.section}>
         <div className={styles.container}>
+          <h2 className={styles.sectionTitle}>Works</h2>
+          <p className={styles.description}>これまでに制作した作品です</p>
+          <div className={styles.worksGrid}>
+            <div className={styles.workCard}>
+              <div className={styles.workContent}>
+                <h3 className={styles.workTitle}>ポートフォリオサイト</h3>
+                <p className={styles.workDescription}>
+                  このサイト自体が作品です。Next.jsとMicroCMSを使い、モダンで親しみやすいポートフォリオサイトを構築しました。デザインからデプロイまで、フルスタックで開発しています。
+                </p>
+                <div className={styles.workTechs}>
+                  <span className={styles.tech}>Next.js</span>
+                  <span className={styles.tech}>TypeScript</span>
+                  <span className={styles.tech}>CSS Modules</span>
+                  <span className={styles.tech}>MicroCMS</span>
+                  <span className={styles.tech}>Vercel</span>
+                </div>
+                <a
+                  href="https://github.com/hattayu-05/react-next-portfolio"
+                  className={styles.workLink}
+                >
+                  GitHub Repository →
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className={styles.section}>
+        <div className={styles.container}>
           <h2 className={styles.sectionTitle}>PROFILE</h2>
           <div className={styles.profile}>
             <div className={styles.profileImage}>
