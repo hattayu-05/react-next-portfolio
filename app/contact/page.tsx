@@ -1,22 +1,24 @@
-'use client';
+"use client";
 
-import { useState } from 'react';
-import styles from './page.module.css';
+import { useState } from "react";
+import styles from "./page.module.css";
 
 export default function Contact() {
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    message: '',
+    name: "",
+    email: "",
+    message: "",
   });
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    alert('お問い合わせありがとうございます！');
-    setFormData({ name: '', email: '', message: '' });
+    alert("お問い合わせありがとうございます！");
+    setFormData({ name: "", email: "", message: "" });
   };
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
+  ) => {
     setFormData({
       ...formData,
       [e.target.name]: e.target.value,
@@ -30,7 +32,7 @@ export default function Contact() {
         <p className={styles.description}>
           ご質問やご相談がございましたら、お気軽にお問い合わせください
         </p>
-        
+
         <div className={styles.content}>
           <div className={styles.formSection}>
             <form onSubmit={handleSubmit} className={styles.form}>
@@ -89,18 +91,6 @@ export default function Contact() {
           </div>
 
           <div className={styles.infoSection}>
-            <div className={styles.infoCard}>
-              <h2 className={styles.infoTitle}>📧 Email</h2>
-              <p className={styles.infoText}>your-email@example.com</p>
-            </div>
-            <div className={styles.infoCard}>
-              <h2 className={styles.infoTitle}>💬 SNS</h2>
-              <div className={styles.socialLinks}>
-                <a href="#" className={styles.socialLink}>Twitter</a>
-                <a href="#" className={styles.socialLink}>GitHub</a>
-                <a href="#" className={styles.socialLink}>LinkedIn</a>
-              </div>
-            </div>
             <div className={styles.infoCard}>
               <h2 className={styles.infoTitle}>⏰ 返信時間</h2>
               <p className={styles.infoText}>
