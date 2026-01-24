@@ -278,7 +278,7 @@
 }
 
 .section {
-  padding: 8rem 0;
+  padding: 6rem 0;
 }
 
 .skillSection {
@@ -291,13 +291,14 @@
 }
 
 .sectionTitle {
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: 700;
-  margin-bottom: 2rem;
-  color: #111827;
+  margin-bottom: 3rem;
+  color: #1a1410;
   text-align: center;
   position: relative;
-  padding-bottom: 1rem;
+  padding-bottom: 1.5rem;
+  letter-spacing: 0.02em;
 }
 
 .sectionTitle::after {
@@ -320,15 +321,15 @@
 }
 
 .blogCard {
-  padding: 1.5rem;
+  padding: 2rem;
   background: #ffffff;
-  border: 1px solid #f3f4f6;
+  border: 1px solid #ede5db;
   border-radius: 1.25rem;
   transition: all 0.35s ease;
   cursor: pointer;
   position: relative;
   overflow: hidden;
-  box-shadow: 0 10px 24px rgba(249, 115, 22, 0.08);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
 }
 
 .blogCard::before {
@@ -370,11 +371,12 @@
 }
 
 .blogDate {
-  font-size: 0.85rem;
-  color: #374151;
-  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+  color: #5a4d45;
+  margin-bottom: 0.75rem;
   font-family: var(--font-mono), monospace;
   letter-spacing: 0.05em;
+  font-weight: 600;
 }
 
 .blogTags {
@@ -395,21 +397,22 @@
 }
 
 .blogTitle {
-  font-size: 1.125rem;
-  font-weight: 600;
-  color: #0f172a;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #1a1410;
   margin: 0;
+  line-height: 1.5;
 }
 
 .profile {
   display: flex;
-  gap: 2rem;
+  gap: 3rem;
   align-items: center;
   background: #ffffff;
-  padding: 2rem;
+  padding: 3rem;
   border-radius: 20px;
-  border: 1px solid #f3f4f6;
-  box-shadow: 0 16px 38px rgba(0, 0, 0, 0.06);
+  border: 1px solid #ede5db;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
   position: relative;
 }
 
@@ -446,19 +449,20 @@
 }
 
 .profileName {
-  font-size: 1.5rem;
+  font-size: 1.75rem;
   font-weight: 700;
-  margin-bottom: 1rem;
-  color: #111827;
+  margin-bottom: 1.25rem;
+  color: #1a1410;
 }
 
 .profileText {
-  color: #374151;
-  line-height: 1.9;
+  color: #5a4d45;
+  line-height: 2;
   max-width: 800px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 1.25rem;
+  font-size: 1.05rem;
 }
 
 .skillGrid {
@@ -471,16 +475,16 @@
 }
 
 .skillCard {
-  padding: 2rem;
+  padding: 2.5rem;
   background: #ffffff;
-  border: 1px solid #f3f4f6;
+  border: 1px solid #ede5db;
   border-radius: 20px;
   text-align: center;
   transition: all 0.3s ease;
   cursor: pointer;
   position: relative;
   overflow: hidden;
-  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
 }
 
 .skillCard::before {
@@ -517,16 +521,17 @@
 }
 
 .skillTitle {
-  font-size: 1.25rem;
-  font-weight: 600;
-  margin-bottom: 0.5rem;
-  color: #111827;
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+  color: #1a1410;
 }
 
 .skillText {
-  color: #4b5563;
-  font-size: 0.875rem;
+  color: #5a4d45;
+  font-size: 0.95rem;
   margin: 0;
+  line-height: 1.8;
 }
 
 .linkWrapper {
