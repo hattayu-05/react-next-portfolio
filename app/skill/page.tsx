@@ -1,5 +1,4 @@
-import { SiPython } from "react-icons/si";
-import { Network } from "lucide-react";
+import { Code2, Server, ShieldCheck } from "lucide-react";
 import styles from "./page.module.css";
 
 type IconName = "python" | "network" | "security";
@@ -7,11 +6,11 @@ type IconName = "python" | "network" | "security";
 const Icon = ({ name }: { name: IconName }) => {
   switch (name) {
     case "python":
-      return <SiPython size={56} className={styles.brandIcon} />;
+      return <Code2 size={56} className={styles.brandIcon} />;
     case "network":
-      return <Network size={56} className={styles.brandIcon} />;
+      return <Server size={56} className={styles.brandIcon} />;
     case "security":
-      return <Network size={56} className={styles.brandIcon} />;
+      return <ShieldCheck size={56} className={styles.brandIcon} />;
   }
 };
 

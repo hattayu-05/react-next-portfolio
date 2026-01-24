@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { FileText } from "lucide-react";
 import styles from "./page.module.css";
 
 export default function Home() {
@@ -40,6 +41,9 @@ export default function Home() {
           <h2 className={styles.sectionTitle}>Blog</h2>
           <div className={styles.blogGrid}>
             <div className={styles.blogCard}>
+              <div className={styles.blogIcon}>
+                <FileText size={24} />
+              </div>
               <div className={styles.blogDate}>2025.01.19</div>
               <div className={styles.blogTags}>
                 <span className={styles.tag}>つぶやき</span>
@@ -47,6 +51,9 @@ export default function Home() {
               <h3 className={styles.blogTitle}>このパソコンの素晴らしさ</h3>
             </div>
             <div className={styles.blogCard}>
+              <div className={styles.blogIcon}>
+                <FileText size={24} />
+              </div>
               <div className={styles.blogDate}>2025.01.18</div>
               <div className={styles.blogTags}>
                 <span className={styles.tag}>学び</span>
@@ -55,6 +62,9 @@ export default function Home() {
               <h3 className={styles.blogTitle}>MicroCMSの使い方</h3>
             </div>
             <div className={styles.blogCard}>
+              <div className={styles.blogIcon}>
+                <FileText size={24} />
+              </div>
               <div className={styles.blogDate}>2025.01.18</div>
               <div className={styles.blogTags}>
                 <span className={styles.tag}>取り組み</span>

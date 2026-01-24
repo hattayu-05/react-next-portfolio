@@ -332,6 +332,23 @@
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
 }
 
+.blogIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  margin-bottom: 1rem;
+  color: #f97316;
+  opacity: 0.8;
+  transition: all 0.3s ease;
+}
+
+.blogCard:hover .blogIcon {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
 .blogCard::before {
   content: "";
   position: absolute;
