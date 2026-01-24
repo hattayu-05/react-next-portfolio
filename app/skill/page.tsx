@@ -7,41 +7,23 @@ const Icon = ({ name }: { name: IconName }) => {
     case "python":
       return (
         <svg viewBox="0 0 24 24" aria-hidden fill="currentColor">
-          <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z" opacity="0.3"/>
-          <path d="M12 4c-4.41 0-8 3.59-8 8s3.59 8 8 8 8-3.59 8-8-3.59-8-8-8zm0 2c3.31 0 6 2.69 6 6s-2.69 6-6 6-6-2.69-6-6 2.69-6 6-6z" />
-          <path d="M11 7h2v7h-2V7zm0 8h2v2h-2v-2z" />
+          {/* Python蛇アイコン */}
+          <path d="M12 2C11.5 2 11 2.2 10.8 2.5L4.3 8C3.7 8.4 3 9.2 3 10v4c0 0.8 0.7 1.6 1.3 2l6.5 5.5c0.2 0.3 0.7 0.5 1.2 0.5s1 -0.2 1.2 -0.5l6.5 -5.5c0.6 -0.4 1.3 -1.2 1.3 -2v-4c0 -0.8 -0.7 -1.6 -1.3 -2l-6.5 -5.5C13 2.2 12.5 2 12 2z M10 9c0.55 0 1 0.45 1 1s-0.45 1 -1 1s-1 -0.45 -1 -1S9.45 9 10 9z M14 15c-0.55 0 -1 -0.45 -1 -1s0.45 -1 1 -1s1 0.45 1 1S14.55 15 14 15z"/>
         </svg>
       );
     case "network":
       return (
-        <svg viewBox="0 0 24 24" aria-hidden fill="currentColor">
-          <g opacity="0.3">
-            <circle cx="6" cy="6" r="3"/>
-            <circle cx="18" cy="6" r="3"/>
-            <circle cx="12" cy="18" r="3"/>
-            <circle cx="6" cy="18" r="3"/>
-            <circle cx="18" cy="18" r="3"/>
-          </g>
-          <circle cx="6" cy="6" r="2.5"/>
-          <circle cx="18" cy="6" r="2.5"/>
-          <circle cx="12" cy="18" r="2.5"/>
-          <circle cx="6" cy="18" r="2.5"/>
-          <circle cx="18" cy="18" r="2.5"/>
-          <line x1="8.2" y1="7.5" x2="15.8" y2="7.5" strokeWidth="1.5" stroke="currentColor" strokeLinecap="round"/>
-          <line x1="6" y1="8.5" x2="6" y2="16.5" strokeWidth="1.5" stroke="currentColor" strokeLinecap="round"/>
-          <line x1="18" y1="8.5" x2="18" y2="16.5" strokeWidth="1.5" stroke="currentColor" strokeLinecap="round"/>
-          <line x1="7.5" y1="17.5" x2="15.8" y2="17.5" strokeWidth="1.5" stroke="currentColor" strokeLinecap="round"/>
-          <line x1="12" y1="16" x2="12" y2="8.5" strokeWidth="1.5" stroke="currentColor" strokeLinecap="round"/>
+        <svg viewBox="0 0 24 24" aria-hidden fill="none" stroke="currentColor" strokeWidth="1.5">
+          {/* リンク/チェーンアイコン */}
+          <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/>
+          <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/>
         </svg>
       );
     case "security":
       return (
         <svg viewBox="0 0 24 24" aria-hidden fill="currentColor">
-          <g opacity="0.3">
-            <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/>
-          </g>
-          <path d="M12 2l7 3.5v5.5c0 4.92-3.4 9.47-8 10.84-4.6-1.37-8-5.92-8-10.84V5.5L12 2z"/>
-          <path d="M10.5 12.5L9 11l-1.41 1.41L10.5 15l5.5-5.5L14.5 8l-4 4z" fill="white"/>
+          {/* ロック/シールドアイコン */}
+          <path d="M18.75 9V7.5c0-.825-.675-1.5-1.5-1.5H6.75c-.825 0-1.5.675-1.5 1.5V9m13.5 0v8.25c0 .825-.675 1.5-1.5 1.5H6.75c-.825 0-1.5-.675-1.5-1.5V9m13.5 0H6.75M12 12.75v3M10.5 16.5h3"/>
         </svg>
       );
   }
