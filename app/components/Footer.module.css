@@ -35,7 +35,7 @@
   padding: 1.5rem;
   background: rgba(249, 115, 22, 0.1);
   border: 2px solid #f97316;
-  border-radius: 0.5rem;
+  border-radius: 16px;
   text-decoration: none;
   color: white;
   transition: all 0.3s ease;

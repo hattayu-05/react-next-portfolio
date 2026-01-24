@@ -17,9 +17,10 @@ export default function Home() {
               </div>
               <h1 className={styles.heroTitle}>守る技術を、楽しく学ぶ。</h1>
               <p className={styles.heroLead}>
-                山下悠（ホワイトハッカー専攻）が、サイバーセキュリティやものづくりの
-                学び・挑戦をまとめたポートフォリオです。暖色の熱量と、クリーンな設計で
-                「こだわって作った」ことが伝わるサイトを目指しています。
+                山下悠（ホワイトハッカー専攻）です。
+                <br />
+                あなたの日常をデジタルの脅威から守る、一番身近なエンジニアを目指して、
+                サイバーセキュリティやものづくりの学び・挑戦をまとめています。
               </p>
               <div className={styles.heroActions}>
                 <Link href="/skill" className={styles.primaryAction}>

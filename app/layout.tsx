@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Poppins, Zen_Kaku_Gothic_New, JetBrains_Mono } from "next/font/google";
+import { Poppins, M_PLUS_Rounded_1c, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
@@ -11,11 +11,11 @@ const poppins = Poppins({
   variable: "--font-poppins",
 });
 
-// 日本語本文用（スッキリ見やすく）
-const zenKaku = Zen_Kaku_Gothic_New({
+// 日本語本文用（丸ゴシックで親しみやすく）
+const mplus = M_PLUS_Rounded_1c({
   weight: ["400", "700"],
   subsets: ["latin"],
-  variable: "--font-zen",
+  variable: "--font-mplus",
 });
 
 // コード・アクセント用（ハッカーっぽく）
@@ -31,13 +31,13 @@ const ogImage =
   "https://images.unsplash.com/photo-1707324148764-99647364afa3?auto=format&fit=crop&w=1200&q=80&ixlib=rb-4.1.0";
 
 export const metadata: Metadata = {
-  title: "Yu Yamashita Portfolio | Security × Creativity",
+  title: "Yu Yamashita - Security Engineer Portfolio",
   description:
-    "ホワイトハッカー専攻・山下悠のポートフォリオ。セキュリティ学習と制作物を暖色グラデーションでまとめています。",
+    "ホワイトハッカー専攻・山下悠のポートフォリオ。あなたの日常をデジタルの脅威から守る、セキュリティエンジニアを目指して。",
   openGraph: {
-    title: "Yu Yamashita Portfolio | Security × Creativity",
+    title: "Yu Yamashita - Security Engineer Portfolio",
     description:
-      "ホワイトハッカー専攻・山下悠のポートフォリオ。セキュリティ学習と制作物を暖色グラデーションでまとめています。",
+      "ホワイトハッカー専攻・山下悠のポートフォリオ。あなたの日常をデジタルの脅威から守る、セキュリティエンジニアを目指して。",
     url: siteUrl,
     siteName: "Yu Yamashita Portfolio",
     locale: "ja_JP",
@@ -53,9 +53,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Yu Yamashita Portfolio | Security × Creativity",
+    title: "Yu Yamashita - Security Engineer Portfolio",
     description:
-      "ホワイトハッカー専攻・山下悠のポートフォリオ。セキュリティ学習と制作物を暖色グラデーションでまとめています。",
+      "ホワイトハッカー専攻・山下悠のポートフォリオ。あなたの日常をデジタルの脅威から守る、セキュリティエンジニアを目指して。",
     images: [ogImage],
   },
 };
@@ -68,7 +68,7 @@ export default function RootLayout({
   return (
     <html
       lang="ja"
-      className={`${poppins.variable} ${zenKaku.variable} ${jetbrains.variable}`}
+      className={`${poppins.variable} ${mplus.variable} ${jetbrains.variable}`}
     >
       <body>
         <Header />
