@@ -6,6 +6,30 @@
 
 京都デザイン＆テクノロジー専門学校 ホワイトハッカー専攻の山下悠によるポートフォリオサイト。セキュリティ学習の歩みと制作物を、暖色グラデーションのデザインでまとめました。
 
+## セットアップ（ローカル）
+
+```bash
+npm install
+npm run dev
+```
+
+### 環境変数
+
+`.env.local` に以下を設定してください。
+
+```
+MICROCMS_SERVICE_DOMAIN=your-service-id
+MICROCMS_API_KEY=your-api-key
+MICROCMS_BLOG_ENDPOINT=blog
+NEXT_PUBLIC_SITE_URL=https://your-domain.vercel.app
+NEXT_PUBLIC_OG_IMAGE_URL=https://your-domain.vercel.app/og.png
+```
+
+- microCMSは新規サービスを作成し、ブログ用スキーマを用意してください（推奨フィールド: `title` `body`/`content` `tags` `eyecatch` `publishedAt`）。
+- `MICROCMS_BLOG_ENDPOINT` はmicroCMSのAPIエンドポイント名（初期値 `blog`）。
+- `NEXT_PUBLIC_SITE_URL` はデプロイ先のURLを入力してください（OGP用）。
+- `NEXT_PUBLIC_OG_IMAGE_URL` はシェア用のOGP画像のURLです（任意）。
+
 # 課題の紹介
 
 ## TOP
@@ -32,6 +56,11 @@
 - 一覧カードから遷移する導線を設計予定。
 - タグ・日付・本文・関連リンクを想定した構成で拡張しやすいように準備。
 
+## エントリーページ
+
+- インターン/アルバイト応募向けに自己PR、希望業務、アピールポイントを整理したセクションを用意。
+- お問い合わせ・ブログ・スキルへのCTAボタンで動線を明確化。
+
 # 一番見てほしいところ
 
 - ヒーローの暖色グラデーションとオブジェクト配置で「熱量」と「安心感」を両立させたビジュアル。
@@ -50,3 +79,10 @@
 
 - 暖色系グラデーションとアクセントラインで一貫性を持たせつつ、カードシャドウで立体感を付与。
 - グリッドレイアウトでレスポンシブ対応し、モバイルでも読みやすい余白とタイポグラフィを調整。
+
+## デプロイ（Vercel想定）
+
+1. GitHubのPublicリポジトリ（react-next-portfolio）をVercelでインポート。
+2. 上記環境変数をVercelのProject Settingsに設定。
+3. デプロイ後、`NEXT_PUBLIC_SITE_URL` に実ドメインを反映させ、再デプロイ。
+4. OGP画像は `NEXT_PUBLIC_SITE_URL` 配下に配置し、必要に応じて `app/layout.tsx` の metadata を差し替え。

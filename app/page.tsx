@@ -12,7 +12,9 @@ export default function Home() {
         <div className={styles.container}>
           <div className={styles.heroContent}>
             <div className={styles.heroText}>
-              <div className={styles.heroBadge}>Security × Creativity</div>
+              <div className={`${styles.heroBadge} ${styles.typewriter}`}>
+                Security × Creativity
+              </div>
               <h1 className={styles.heroTitle}>守る技術を、楽しく学ぶ。</h1>
               <p className={styles.heroLead}>
                 山下悠（ホワイトハッカー専攻）が、サイバーセキュリティやものづくりの
@@ -30,6 +32,7 @@ export default function Home() {
             </div>
 
             <div className={styles.heroVisual}>
+              <div className={styles.heroCode} aria-hidden="true" />
               <div
                 className={styles.heroPhoto}
                 aria-label="Warm workspace scene"

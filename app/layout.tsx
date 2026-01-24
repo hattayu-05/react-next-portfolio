@@ -24,6 +24,12 @@ const jetbrains = JetBrains_Mono({
   variable: "--font-mono",
 });
 
+const siteUrl =
+  process.env.NEXT_PUBLIC_SITE_URL ?? "https://portfolio.example.com";
+const ogImage =
+  process.env.NEXT_PUBLIC_OG_IMAGE_URL ??
+  "https://images.unsplash.com/photo-1707324148764-99647364afa3?auto=format&fit=crop&w=1200&q=80&ixlib=rb-4.1.0";
+
 export const metadata: Metadata = {
   title: "Yu Yamashita Portfolio | Security × Creativity",
   description:
@@ -32,13 +38,13 @@ export const metadata: Metadata = {
     title: "Yu Yamashita Portfolio | Security × Creativity",
     description:
       "ホワイトハッカー専攻・山下悠のポートフォリオ。セキュリティ学習と制作物を暖色グラデーションでまとめています。",
-    url: "https://portfolio.example.com",
+    url: siteUrl,
     siteName: "Yu Yamashita Portfolio",
     locale: "ja_JP",
     type: "website",
     images: [
       {
-        url: "https://images.unsplash.com/photo-1707324148764-99647364afa3?auto=format&fit=crop&w=1200&q=80&ixlib=rb-4.1.0",
+        url: ogImage,
         width: 1200,
         height: 630,
         alt: "Warm desk vibes portfolio visual",
@@ -50,9 +56,7 @@ export const metadata: Metadata = {
     title: "Yu Yamashita Portfolio | Security × Creativity",
     description:
       "ホワイトハッカー専攻・山下悠のポートフォリオ。セキュリティ学習と制作物を暖色グラデーションでまとめています。",
-    images: [
-      "https://images.unsplash.com/photo-1707324148764-99647364afa3?auto=format&fit=crop&w=1200&q=80&ixlib=rb-4.1.0",
-    ],
+    images: [ogImage],
   },
 };
 

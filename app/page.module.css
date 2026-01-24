@@ -154,7 +154,7 @@
 .heroLead {
   max-width: 720px;
   font-size: 1.1rem;
-  line-height: 2.0;
+  line-height: 2;
   color: rgba(255, 255, 255, 0.9);
   margin-bottom: 1.5rem;
 }
