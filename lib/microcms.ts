@@ -6,20 +6,17 @@ const blogEndpoint = process.env.MICROCMS_BLOG_ENDPOINT ?? "blog";
 const baseUrl = serviceDomain
   ? `https://${serviceDomain}.microcms.io/api/v1/${blogEndpoint}`
   : "";
-
-function ensureEnv() {
-  if (!serviceDomain || !apiKey) {
-    throw new Error(
-      "MICROCMS_SERVICE_DOMAIN と MICROCMS_API_KEY を .env.local に設定してください。",
-    );
-  }
-}
+const hasEnv = Boolean(serviceDomain && apiKey);
 
 async function fetchFromMicroCMS<T>(
   path = "",
   searchParams?: Record<string, string>,
 ) {
-  ensureEnv();
+  if (!hasEnv) {
+    throw new Error(
+      "microCMS env missing: MICROCMS_SERVICE_DOMAIN/MICROCMS_API_KEY",
+    );
+  }
   const url = new URL(path, `${baseUrl}/`);
   if (searchParams) {
     Object.entries(searchParams).forEach(([key, value]) => {
@@ -45,6 +42,14 @@ async function fetchFromMicroCMS<T>(
 }
 
 export async function getBlogList(limit = 20): Promise<BlogListResponse> {
+  if (!hasEnv) {
+    return {
+      contents: [],
+      totalCount: 0,
+      offset: 0,
+      limit,
+    };
+  }
   return fetchFromMicroCMS<BlogListResponse>("", {
     limit: String(limit),
     orders: "-publishedAt",
@@ -57,9 +62,16 @@ export async function getBlogDetail(slug: string): Promise<Blog> {
 }
 
 export async function getBlogSlugs(limit = 100): Promise<string[]> {
-  const data = await fetchFromMicroCMS<BlogListResponse>("", {
-    limit: String(limit),
-    fields: "id",
-  });
-  return data.contents.map((post) => post.id);
+  if (!hasEnv) {
+    return [];
+  }
+  try {
+    const data = await fetchFromMicroCMS<BlogListResponse>("", {
+      limit: String(limit),
+      fields: "id",
+    });
+    return data.contents.map((post) => post.id);
+  } catch {
+    return [];
+  }
 }

@@ -15,8 +15,13 @@ const formatTags = (tags?: unknown) => {
 };
 
 export default async function Blog() {
-  const data = await getBlogList();
-  const posts = data.contents;
+  let posts: Awaited<ReturnType<typeof getBlogList>>["contents"] = [];
+  try {
+    const data = await getBlogList();
+    posts = data.contents;
+  } catch {
+    posts = [];
+  }
 
   return (
     <main className={styles.main}>

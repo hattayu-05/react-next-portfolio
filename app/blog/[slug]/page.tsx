@@ -18,7 +18,12 @@ const formatTags = (tags?: unknown) => {
 
 export async function generateStaticParams() {
   const slugs = await getBlogSlugs();
-  return slugs.map((slug) => ({ slug }));
+  try {
+    const slugs = await getBlogSlugs();
+    return slugs.map((slug) => ({ slug }));
+  } catch {
+    return [];
+  }
 }
 
 export async function generateMetadata({
